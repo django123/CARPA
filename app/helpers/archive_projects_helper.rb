@@ -1,0 +1,2 @@
+module ArchiveProjectsHelper
+end

@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Document</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project_phase.document %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Description</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project_phase.description %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Phase</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project_phase.phase %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Project</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project_phase.project.reference %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="form-actions">
+  <%= link_to 'Edit', edit_project_phase_path(@project_phase) , class: "btn btn-success" %>
+  <%= link_to 'Back', project_phases_path , class: "btn btn-primary" %>
+</div>

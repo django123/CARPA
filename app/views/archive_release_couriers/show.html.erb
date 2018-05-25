@@ -1,0 +1,90 @@
+<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Name</strong></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= @archive_release_courier.name %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Description</strong></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= @archive_release_courier.description%>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Reference</strong></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= @archive_release_courier.reference %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>File</strong></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= @archive_release_courier.file%>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"> <strong>User</strong></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= @archive_release_courier.user.lName %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"> <strong>Courrier Sortant</strong></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= @archive_release_courier.release_courier.orderNumber %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="form-actions">
+  <%= link_to 'Edit', edit_archive_release_courier_path(@archive_release_courier), class: "btn btn-success" %>
+  <%= link_to 'Back', archive_release_couriers_path,class: "btn btn-primary" %>
+</div>

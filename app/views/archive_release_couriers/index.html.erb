@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Archive Release Couriers</h1>
+
+<table role = "datatable">
+
+  <thead>
+  <tr class="success">
+    <th>Name</th>
+    <th>Description</th>
+    <th>Reférence</th>
+    <th>File</th>
+    <th>User</th>
+    <th>Release courier</th>
+   <!-- <th colspan="2"></th>-->
+  </tr>
+  </thead>
+
+  <tbody>
+    <% @archive_release_couriers.each do |archive_release_courier| %>
+      <tr>
+        <td><%= link_to archive_release_courier.description, archive_release_courier %></td>
+        <td><%= link_to archive_release_courier.name, archive_release_courier %></td>
+        <td><%= link_to archive_release_courier.reference , archive_release_courier%></td>
+        <td><%= link_to archive_release_courier.file , archive_release_courier%></td>
+        <td><%= link_to archive_release_courier.user.lName, archive_release_courier %></td>
+        <td><%= link_to archive_release_courier.release_courier.reference, archive_release_courier %></td>
+      </tr>
+  <%end%>
+  </tbody>
+</table>
+
+<br>
+<div class="form-actions">
+
+  <%= link_to 'New Archive Release Courier', new_archive_release_courier_path, remote: true, class: 'submit btn btn-success btn-xs round' %>
+
+</div>

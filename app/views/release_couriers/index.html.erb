@@ -1,0 +1,40 @@
+<p id="notice">
+  <%= notice %>
+</p>
+
+<h1>Courrier Sortant</h1>
+
+<table role="datatable">
+  <thead>
+  <tr class="success">
+    <th>Numero d'ordre</th>
+    <th>Reférence</th>
+    <th>Destination</th>
+    <th>User</th>
+    <th>Projet</th>
+    <th>Date</th>
+    <!--<th colspan="3"></th>-->
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @release_couriers.each do |releaseCourier| %>
+      <tr>
+        <td><%= releaseCourier.orderNumber %></td>
+        <td><%= releaseCourier.reference %></td>
+        <td><%= releaseCourier.destination %></td>
+        <td><%= releaseCourier.user.lName %></td>
+        <td><%= releaseCourier.project.reference %></td>
+        <td><%= releaseCourier.date %></td>
+        <!--<td><%= link_to 'Show', releaseCourier %></td>
+        <td><%= link_to 'Edit', edit_release_courier_path(releaseCourier) %></td>
+        <td><%= link_to 'Destroy', releaseCourier, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+<br>
+
+<div class="form-actions">
+  <%= link_to 'Ajouter', new_release_courier_path, remote: true,class: 'submit btn btn-success btn-xs round' %>
+</div>

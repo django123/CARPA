@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= "#{params[:action].titleize} Courrier Sortant" %></h3>
+      </div>
+      <div class="panel-body">
+        <%= simple_form_for @release_courier, html: { multipart: true, class: "custom" } do |f| %>
+            <%= f.error_notification %>
+            <div class="form-inputs">
+              <%= f.input :orderNumber %>
+              <%= f.input :reference %>
+
+              <%= f.input :destination %>
+
+              <%= f.input :date,order: [:day, :month, :year] %>
+
+              <%= f.association :user, :label_method => lambda{ |user| "#{user.lName} #{user.fName}"} %>
+
+              <%= f.association :project,:label_method => lambda{ |project| "#{project.reference}"} %>
+            </div>
+
+            <div class="form-actions">
+              <%= f.button :submit, class: 'btn btn-success' %>
+            </div>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>

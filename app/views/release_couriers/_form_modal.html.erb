@@ -1,0 +1,33 @@
+<div class="modal fade" id="form_modal">
+  <%= simple_form_for @release_courier, validate: true do |f| %>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title"><%= "#{params[:action].titleize} Courrier Sortant" %></h4>
+          </div>
+          <div class="modal-body">
+            <%= f.error_notification %>
+
+            <div class="form-inputs">
+
+              <%= f.input :orderNumber %>
+
+              <%= f.input :reference %>
+
+              <%= f.input :destination %>
+
+              <%= f.input :date,order: [:day, :month, :year] %>
+
+              <%= f.association :user, :label_method => lambda{ |user| "#{user.lName} #{user.fName}"} %>
+
+              <%= f.association :project,:label_method => lambda{ |project| "#{project.reference}"} %>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <%= f.button :submit, class: 'submit btn btn-success btn-xs round' %>
+          </div>
+        </div>
+      </div>
+  <% end %>
+</div>

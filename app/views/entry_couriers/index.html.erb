@@ -1,0 +1,42 @@
+<p id="notice">
+    <%= notice %>
+</p>
+<h1>Entry Couriers</h1>
+
+<table role="datatable">
+    <thead>
+        <tr class="success">
+          <th>Numero d'ordre</th>
+          <th>Reference</th>
+          <th>Subject</th>
+          <th>Sender</th>
+          <th>Receveir</th>
+          <th>Duration</th>
+          <th>Sentdate</th>
+          <th>File</th>
+          <th>User</th>
+          <th>Project</th>
+        </tr>
+    </thead>
+    <tbody>
+      <% @entry_couriers.each do |courier| %>
+      <tr>
+        <td><%= link_to courier.orderNumber , courier %></td>
+        <td><%= link_to courier.reference , courier %></td>
+        <td><%= link_to courier.subject , courier %></td>
+        <td><%= link_to courier.sender , courier %></td>
+        <td><%= link_to courier.receiver , courier %></td>
+        <td><%= link_to courier.duration , courier %></td>
+        <td><%= link_to courier.sentDate , courier %></td>
+        <td><%= link_to courier.file , courier%></td>
+        <td><%= link_to courier.user.lName , courier %></td>
+        <td><%= link_to courier.project.reference , courier%></td>
+      </tr>
+      <%end%>
+    </tbody>
+</table>
+<br>
+
+<div class="fomr-actions">
+  <%= link_to 'New Entry Courier', new_entry_courier_path, remote: true,class: 'submit btn btn-success btn-xs round ' %>
+</div>

@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Archive Projects</h1>
+
+<table role = "datatable">
+  <thead>
+    <tr class="success">
+      <th>Description</th>
+      <th>Name</th>
+      <th>Reference</th>
+      <th>File</th>
+      <th>User</th>
+      <th>Project</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @archive_projects.each do |archive_project| %>
+      <tr>
+        <td><%= link_to archive_project.description , archive_project%></td>
+        <td><%= link_to archive_project.name , archive_project%></td>
+        <td><%= link_to archive_project.reference , archive_project%></td>
+        <td><%= link_to archive_project.file , archive_project%></td>
+        <td><%= link_to archive_project.user.lName , archive_project%></td>
+        <td><%= link_to archive_project.project.reference , archive_project%></td>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<div class="form-actions">
+   <%= link_to 'New Archive Project', new_archive_project_path,remote: true, class: 'submit btn btn-success btn-xs round' %>
+</div >

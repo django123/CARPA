@@ -1,0 +1,2 @@
+module ArchiveEntryCouriersHelper
+end

@@ -1,0 +1,38 @@
+
+
+
+<p id="notice"><%= notice %></p>
+
+<h1>Phase des projets</h1>
+
+<table role="datatable">
+  <thead class="success">
+  <tr>
+    <th>Document</th>
+    <th>Description</th>
+    <th>Phase</th>
+    <th>Project</th>
+    <!--<th colspan="3"></th>-->
+  </tr>
+  </thead>
+
+  <tbody>
+     <% @project_phases.each do |project_phase| %>
+      <tr>
+        <td><%= link_to project_phase.document , project_phase%></td>
+        <td><%= link_to  project_phase.description , project_phase%></td>
+        <td><%= link_to  project_phase.phase , project_phase%></td>
+        <td><%=  link_to project_phase.project.reference , project_phase%></td>
+        <!--<td><%= link_to 'Show', p_phase %></td>
+        <td><%= link_to 'Edit', edit_p_phase_path(p_phase) %></td>
+        <td><%= link_to 'Destroy', p_phase, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<div class="form-actions">
+  <%= link_to 'New Project Phase', new_project_phase_path, remote: true, class: 'submit btn btn-success btn-xs round'  %>
+</div>

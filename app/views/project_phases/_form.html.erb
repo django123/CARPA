@@ -1,0 +1,31 @@
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= "#{params[:action].titleize} Project Phase" %></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= simple_form_for @project_phase do |f| %>
+            <%= f.error_notification %>
+            <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+
+            <div class="form-inputs">
+              <%= f.input :document, input_html: { multiple: 'multiple'} %>
+              <%= f.input :description %>
+              <%= f.input :phase %>
+              <%= f.association :project,:label_method => lambda{ |p_project| "#{p_project.reference}"} %>
+            </div>
+
+            <div class="form-actions">
+              <%= f.button :submit, class: 'btn btn-success' %>
+            </div>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Archive Entry Couriers</h1>
+
+<table role = "datatable">
+
+  <thead>
+  <tr class="success">
+    <th>Name</th>
+    <th>Description</th>
+    <th>Reférence</th>
+    <th>File</th>
+    <th>User</th>
+    <th>Entry courier</th>
+   <!-- <th colspan="2"></th>-->
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @archive_entry_couriers.each do |archive_entry_courier| %>
+      <tr>
+        <td><%= link_to archive_entry_courier.name , archive_entry_courier%></td>
+        <td><%= link_to archive_entry_courier.description , archive_entry_courier%></td>
+        <td><%= link_to archive_entry_courier.reference , archive_entry_courier%></td>
+        <td><%= link_to archive_entry_courier.file , archive_entry_courier%></td>
+        <td><%= link_to archive_entry_courier.user.lName, archive_entry_courier %></td>
+        <td><%= link_to archive_entry_courier.entry_courier.reference , archive_entry_courier%></td>
+      </tr>
+  <%end%>
+  </tbody>
+</table>
+
+<br>
+<div class="form-actions">
+
+  <%= link_to 'New Archive Entry Courier',new_archive_entry_courier_path, remote: true, class: 'submit btn btn-success btn-xs round' %>
+
+
+</div>

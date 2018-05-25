@@ -1,0 +1,300 @@
+fr:
+  activerecord:
+    models:
+      User: "Utilisateur"
+      Project: "Projet"
+      Courier: "Courrier"
+      PPhase: "Phase Projet"
+      ArchiveCourier:  "Archive Courrier"
+      ArchiveProject: "Archive Projet"
+      ArchiveReleaseCourier: "Archive Courrier Sortant"
+      
+    attributes:
+      project:
+        reference: "Code du Projet"
+        duration: "Date de création du projet"
+        amount:  "Montant"
+        public_partenership: "Partenaire Public"
+        private_partenership: "Partenaire Privé"
+        project_situation:  "Situation du Projet"
+        focal_point: "Point Focal"
+        object_project: "Objet du Projet"
+        procedure: "Procédure"
+        contratDuration: "Durée du Contrat"
+        projectName: "Nom du Projet"
+        secteurActivite: "Secteur d'Activité"
+        projectDescription: "Description du Projet"
+
+      entry_courier:
+        reference: "Réference"
+        subject: "Objet"
+        sender: "Expéditeur"
+        receiver: "Destinataire"
+        sentDate: "Date d'envoi"
+        duration: "Date d'emission"
+        file: "Fichier"
+        user_id: "Utilisateur"
+        project_id: "Projet"
+        orderNumber: "Numéro d'ordre"
+
+      user:
+        lName: 'Nom'
+        fName: 'Prénom'
+        adress: 'Adresse'
+        phone: 'Téléphone'
+        role:  'Fonction'
+        registration_number: 'Matricule'
+        email: 'Email'
+        password: 'Mot de Passe'
+        password_confirmation: 'Confirmation du Mot de Passe'
+
+      release_courier:
+        orderNumber: "Numéro d'ordre"
+        destination: "Destinataire"
+        reference: "Réference"
+        date: "Date"
+        user_id: "Utilisateur"
+        project_id: "Projet"
+
+      archive_courier:
+        description: "Description"
+        name: "Nom"
+        reference: "Réference"
+        file: "Fichier"
+        user_id: "Utilisateur"
+        courier_id: "Courrier entrant"
+
+      archive_project:
+        description: "Description"
+        name: "Nom"
+        reference: "Réference"
+        file: "Fichier"
+        user_id: "Utilisateur"
+        project_id: " projet"
+
+      archive_release_courier:
+        description: "Description"
+        name: "Nom"
+        reference: "Réference"
+        file: "Fichier"
+        user_id: "Utilisateur"
+        release_courier: " courrier sortant"
+
+      project_phase:
+        description: "Description"
+        document: "Fichier"
+        phase: "Phase"
+
+  admin:
+    js:
+      true: Vrai
+      false: Faux
+      is_present: Est présent
+      is_blank: Est vide
+      date: Date ...
+      between_and_: Entre le ... et le ...
+      today: "Aujourd'hui"
+      yesterday: Hier
+      this_week: Cette semaine
+      last_week: Semaine précédente
+      number: Nombre ...
+      contains: Contient
+      is_exactly: Est exactement
+      starts_with: Commence par
+      ends_with: Termine par
+    loading: "Chargement..."
+    home:
+      name: Accueil
+    pagination:
+      previous: "&laquo; Préc."
+      next: "Suiv. &raquo;"
+      truncate: "…"
+    navigation_labels:
+      User: "Utilisateurteur"
+      Project: "Project"
+    misc:
+      filter_date_format: "dd/mm/yy" # a combination of 'dd', 'mm' and 'yy' with any delimiter. No other interpolation will be done!
+      search: "Rechercher"
+      filter: "Filtrer"
+      refresh: "Rafraîchir"
+      show_all: "Voir tout"
+      add_filter: "Ajouter un filtre..."
+      bulk_menu_title: "Objets sélectionnés..."
+      remove: "Enlever"
+      add_new: "Ajouter nouveau"
+      chosen: "%{name} choisis"
+      chose_all: "Prendre tout"
+      clear_all: "Tout enlever"
+      up: "Monter"
+      down: "Descendre"
+      navigation: "Navigation"
+      navigation_static_label: "Liens"
+      log_out: "Déconnectez-vous"
+      ago: ""
+    flash:
+      successful: "%{name} a été %{action} avec succès"
+      error: "%{name} n'a pas pu être %{action}"
+      noaction: "Aucune action !"
+      model_not_found: "Le model '%{model}' n'a pas été trouvé"
+      object_not_found: "%{model} avec id '%{id}' n'a pas été trouvé"
+    table_headers:
+      model_name: "Nom du modèle"
+      last_created: "Utilisé"
+      records: "Enregistrements"
+      username: "Utilisateur"
+      changes: "Changements"
+      created_at: "Date/Heure"
+      item: "Objet"
+      message: "Message"
+    actions:
+      dashboard:
+        title: "Administration"
+        menu: "Administration"
+        breadcrumb: "Administration"
+      index:
+        title: "Liste des %{model_label_plural}"
+        menu: "Liste"
+        breadcrumb: "%{model_label_plural}"
+      show:
+        title: "Détails pour %{model_label} '%{object_label}'"
+        menu: "Voir"
+        breadcrumb: "%{object_label}"
+      show_in_app:
+        menu: "Voir dans l'application"
+      new:
+        title: "Création d'un(e) %{model_label}"
+        menu: "Nouveau"
+        breadcrumb: "Nouveau"
+        link: "Ajouter un(e) %{model_label}"
+        done: "créé(e)"
+      edit:
+        title: "Édition %{model_label} '%{object_label}'"
+        menu: "Édition"
+        breadcrumb: "Édition"
+        link: "Éditer ce(tte) %{model_label}"
+        done: "modifié(e)"
+      delete:
+        title: "Suppression %{model_label} '%{object_label}'"
+        menu: "Supprimer"
+        breadcrumb: "Suppression"
+        link: "Supprimer '%{object_label}'"
+        done: "supprimé(e)"
+      bulk_delete:
+        title: "Suppression de %{model_label_plural}"
+        menu: "Délétion multiple"
+        breadcrumb: "Délétion multiple"
+        bulk_link: "Supprimer les %{model_label_plural} sélectionné(e)s"
+      export:
+        title: "Export de %{model_label_plural}"
+        menu: "Export"
+        breadcrumb: "Export"
+        link: "Export des %{model_label_plural} trouvé(e)s"
+        bulk_link: "Exporter les %{model_label_plural} sélectionné(e)s"
+        done: "exporté(e)s"
+      history_index:
+        title: "Historique des %{model_label_plural}"
+        menu: "Historique"
+        breadcrumb: "Historique"
+      history_show:
+        title: "Historique %{model_label} '%{object_label}'"
+        menu: "Historique"
+        breadcrumb: "Historique"
+    form:
+      cancel: "Annuler"
+      basic_info: "Informations de base"
+      required: "Obligatoire"
+      optional: "Facultatif"
+      one_char: "caractère"
+      char_length_up_to: "longueur jusqu'à"
+      char_length_of: "longueur de"
+      save: "Enregistrer"
+      save_and_add_another: "Enregistrer et créer un(e) autre"
+      save_and_edit: "Enregistrer et re-modifier"
+      all_of_the_following_related_items_will_be_deleted: " ? Les objets suivants peuvent être affectés (supprimés ou orphelins) : "
+      are_you_sure_you_want_to_delete_the_object: "Êtes-vous sûr de vouloir supprimer cet(te) %{model_name}"
+      confirmation: "Oui, je suis sûr(e)"
+      bulk_delete: "Les objets suivants seront supprimés, ce qui pourrait supprimer ou rendre orpheline les dépendances affichées :"
+      new_model: "%{name} (nouveau)"
+    export:
+      confirmation: "Exporter en %{name}"
+      select: "Sélectionner les champs à exporter"
+      select_all_fields: "Selectionner Tous Les Champs"
+      fields_from: "Champs pour '%{name}'"
+      fields_from_associated: "Champs pour l'association '%{name}'"
+      display: "Afficher %{name} : %{type}"
+      options_for: "Options pour %{name}"
+      empty_value_for_associated_objects: "<vide>"
+      click_to_reverse_selection: 'Cliquer pour inverser la sélection'
+      csv:
+        header_for_root_methods: "%{name}" # 'model' is available
+        header_for_association_methods: "%{name} [%{association}]"
+        encoding_to: "Encoder en..."
+        encoding_to_help: "Choisir l'encodage de sortie. Laisser vide pour garder l'encodage d'entrée : (%{name})"
+        skip_header: "Pas d'en-tête"
+        skip_header_help: "Ne pas afficher d'en-tête (pas de champs de description)"
+        default_col_sep: ";"
+        col_sep: "Séparateur de colonnes"
+        col_sep_help: "Laisser vide pour utiliser la valeur par défaut recommandée pour votre système ('%{value}')"
+
+#devise
+  devise:
+    confirmations:
+      confirmed: "Votre adresse e-mail a été confirmée avec succès."
+      send_instructions: "Vous recevrez un email avec des instructions pour confirmer votre adresse email dans quelques minutes."
+      send_paranoid_instructions: "Si votre adresse e-mail existe dans notre base de données, vous recevrez un e-mail avec des instructions pour confirmer votre adresse e-mail dans quelques minutes."
+    failure:
+      already_authenticated: "Vous êtes déjà connecté."
+      inactive: "Votre compte n'est pas encore activé."
+      invalid: "email ou mot de passe incorrect."
+      locked: "Ton compte est bloqué."
+      last_attempt: "Vous avez encore une tentative avant que votre compte soit verrouillé."
+      not_found_in_database: "email ou mot de passe incorrect."
+      timeout: "Your session expired. Please sign in again to continue."
+      unauthenticated: "Votre session a expiré Veuillez vous reconnecter pour continuer."
+      unconfirmed: "Vous devez confirmer votre adresse e-mail avant de continuer."
+    mailer:
+      confirmation_instructions:
+        subject: "Instructions de confirmation"
+      reset_password_instructions:
+        subject: "Instructions pour changer le mot de passe"
+      unlock_instructions:
+        subject: "Instructions pour déverrouiller le compte"
+      email_changed:
+        subject: "Email modifié"
+      password_change:
+        subject: "Mot de passe changé"
+    omniauth_callbacks:
+      failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
+      success: "Successfully authenticated from %{kind} account."
+    passwords:
+      no_token: "You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided."
+      send_instructions: "You will receive an email with instructions on how to reset your password in a few minutes."
+      send_paranoid_instructions: "If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes."
+      updated: "Your password has been changed successfully. You are now signed in."
+      updated_not_active: "Your password has been changed successfully."
+    registrations:
+      destroyed: "Votre compte a été supprimé. Nous espérons vous revoir bientôt."
+      signed_up: "Votre inscription est enregistrée. Si demandé, un courriel de confirmation vous a été envoyé."
+      signed_up_but_inactive: "You have signed up successfully. However, we could not sign you in because your account is not yet activated."
+      signed_up_but_locked: "You have signed up successfully. However, we could not sign you in because your account is locked."
+      signed_up_but_unconfirmed: "A message with a confirmation link has been sent to your email address. Please follow the link to activate your account."
+      update_needs_confirmation: "You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirm link to confirm your new email address."
+      updated: "Votre mise à jour a été prise en compte."
+    sessions:
+      signed_in: "Connecté."
+      signed_out: "Déconnecté."
+      already_signed_out: "Signed out successfully."
+    unlocks:
+      send_instructions: "You will receive an email with instructions for how to unlock your account in a few minutes."
+      send_paranoid_instructions: "If your account exists, you will receive an email with instructions for how to unlock it in a few minutes."
+      unlocked: "Your account has been unlocked successfully. Please sign in to continue."
+  errors:
+    messages:
+      already_confirmed: "was already confirmed, please try signing in"
+      confirmation_period_expired: "needs to be confirmed within %{period}, please request a new one"
+      expired: "has expired, please request a new one"
+      not_found: "not found"
+      not_locked: "was not locked"
+      not_saved:
+        one: "1 error prohibited this %{resource} from being saved:"
+        other: "%{count} errors prohibited this %{resource} from being saved:"

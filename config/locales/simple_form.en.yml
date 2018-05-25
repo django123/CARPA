@@ -1,0 +1,100 @@
+en:
+  simple_form:
+    labels:
+      user:
+        lName: 'Nom'
+        fName: 'Prénom'
+        adress: 'Adresse'
+        phone: 'Téléphone'
+        role:  'Fonction'
+        registration_number: 'Matricule'
+        email: 'Email'
+        password: 'Mot de Passe'
+        password_confirmation: 'Confirmation du Mot de Passe'
+
+      entry_courier:
+        reference: "Réference"
+        subject: "Objet"
+        sender: "Expéditeur"
+        receiver: "Destinataire"
+        sentDate: "Date d'envoi"
+        duration: "Date d'emission"
+        file: "Fichier"
+        user_id: "Utilisateur"
+        project_id: "Projet"
+        orderNumber: "Numéro d'ordre"
+
+      project:
+        reference: "Code du Projet"
+        duration: "Date de création du projet"
+        amount:  "Montant"
+        public_partenership: "Partenaire Public"
+        private_partenership: "Partenaire Privé"
+        project_situation:  "Situation du Projet"
+        focal_point: "Point Focal"
+        object_project: "Objet du Projet"
+        procedure: "Procédure"
+        contratDuration: "Durée du Contrat"
+        projectName: "Nom du Projet"
+        secteurActivite: "Secteur d'Activité"
+        projectDescription: "Description du Projet"
+
+      archive_release_courier:
+        description: "Description"
+        name: "Nom"
+        reference: "Réference"
+        file: "Fichier"
+
+      archive_courier:
+        description: "Description"
+        name: "Nom"
+        reference: "Réference"
+        file: "Fichier"
+
+      archive_project:
+        description: "Description"
+        name: "Nom"
+        reference: "Réference"
+        file: "Fichier"
+      project_phase:
+        description: "Description"
+        document: "Fichier"
+        phase: "Phase"
+
+      release_courier:
+        orderNumber: "Numéro d'ordre"
+        destination: "Destinataire"
+        reference: "Réference"
+        date: "Date"
+        user_id: "Utilisateur"
+        project_id: "Projet"
+
+    "yes": 'Yes'
+    "no": 'No'
+    required:
+      text: 'required'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "Please review the problems below:"
+    # Examples
+    # labels:
+    #   defaults:
+    #     password: 'Password'
+    #   user:
+    #     new:
+    #       email: 'E-mail to sign in.'
+    #     edit:
+    #       email: 'E-mail.'
+    # hints:
+    #   defaults:
+    #     username: 'User name to sign in.'
+    #     password: 'No special characters, please.'
+    # include_blanks:
+    #   defaults:
+    #     age: 'Rather not say'
+    # prompts:
+    #   defaults:
+    #     age: 'Select your age'

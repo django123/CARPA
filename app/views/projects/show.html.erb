@@ -1,0 +1,203 @@
+<p id="notice">
+    <%= notice %>
+</p>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Reference</strong></h3>
+      </div>
+      <div class="panel-body">
+          <%= @project.reference %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Objet du projet</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project.object_project %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Nom du Projet</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project.projectName %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Description du Projet</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project.projectDescription %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Secteur d'Activité</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project.secteurActivite%>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Point focal</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project.focal_point %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Situation du projet</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project.project_situation %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Partenariat Public</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project.public_partenership %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Partenariat Privé</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project.private_partenership %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Montant</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project.amount %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Procedure</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project.procedure %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Phase du projet</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project.phase %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Durée du projet</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project.contratDuration %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Date de création du projet</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project.duration %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>User</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @project.user.lName %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="form-actions">
+  <%= link_to 'Edit', edit_project_path(@project), class: "btn btn-success" %>
+  <%= link_to 'Back', projects_path, class: "btn btn-primary" %>
+</div>
