@@ -17,11 +17,11 @@
             <%= f.input :secteurActivite %>
             <%= f.input :focal_point %>
             <%= f.input :project_situation %>
-            <%= f.input :public_partenership %>
-            <%= f.input :private_partenership %>
+            <%= f.input :public_partenership%>
+            <%= f.input :private_partenership%>
             <%= f.input :amount %>
             <%= f.input :procedure %>
-            <%= f.input :phase %>
+
             <%= f.input :contratDuration %>
             <%= f.input :duration, order: [:day, :month, :year] %>
             <%= f.association :user,:label_method => lambda{ |user| "#{user.lName} #{user.fName}" } %>

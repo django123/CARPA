@@ -8,7 +8,7 @@ fr:
       ArchiveCourier:  "Archive Courrier"
       ArchiveProject: "Archive Projet"
       ArchiveReleaseCourier: "Archive Courrier Sortant"
-      
+
     attributes:
       project:
         reference: "Code du Projet"
