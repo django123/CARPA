@@ -30,6 +30,8 @@ $(document).on('turbolinks:load', function(){
   });
 })
 
+flatpickr(".datepicker");
+
 Turbolinks.enableProgressBar();
 Turbolinks.enableTransitionCache();
 

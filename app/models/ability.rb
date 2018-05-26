@@ -13,7 +13,7 @@ class Ability
         can :access, :rails_admin
         can :dashboard
         can :manage, Project
-        can :manage, PPhase
+        can :manage, ProjectPhase
         can :manage, EntryCourier
         can :manage, ReleaseCourier
 

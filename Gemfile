@@ -104,3 +104,4 @@ gem 'wicked'
 gem "cocoon"
 gem 'bootstrap-glyphicons'
 gem 'webpacker', '~> 3.5', '>= 3.5.3'
+gem 'flatpickr'
