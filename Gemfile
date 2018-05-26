@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.0'
+ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
@@ -98,8 +98,9 @@ gem 'rails_admin_rollincode', '~> 1.2', '>= 1.2.1'
 gem 'i18n', '~> 1.0', '>= 1.0.1'
 gem 'rails_refactor', '~> 1.4', '>= 1.4.4'
 gem 'dropzonejs-rails', '~> 0.8.2'
-gem 'rails-assets-jquery', source: 'https://rails-assets.org'
-gem 'rails-assets-datatables', source: 'https://rails-assets.org'
+gem 'rails-assets-jquery', source: 'http://insecure.rails-assets.org'
+gem 'rails-assets-datatables', source: 'http://insecure.rails-assets.org'
 gem 'wicked'
 gem "cocoon"
 gem 'bootstrap-glyphicons'
+gem 'webpacker', '~> 3.5', '>= 3.5.3'
