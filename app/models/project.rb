@@ -6,7 +6,7 @@ class Project < ApplicationRecord
   has_many :project_phases
   has_many :archive_projects
 
-  validates_presence_of :reference, :object_project, :public_partenership, :private_parternership, :amount
+  validates_presence_of :reference, :object_project, :public_partenership, :private_partenership, :amount
   validates_uniqueness_of :reference, :object_project
 
 end
