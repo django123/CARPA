@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f4c1aae-598d-46ed-83e7-beb3ac8d13eb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/1st_load_framework.css.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/1st_load_framework.css.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/ability.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/ability.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/archive_entry_couriers/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/archive_entry_couriers/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/archive_entry_couriers/_form_modal.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/archive_entry_couriers/_form_modal.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/archive_entry_couriers/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/archive_entry_couriers/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/archive_entry_couriers/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/archive_entry_couriers/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/archive_entry_couriers/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/archive_entry_couriers/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/archive_release_couriers/_form_modal.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/archive_release_couriers/_form_modal.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/entry_couriers/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/entry_couriers/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/entry_couriers/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/entry_couriers/show.html.erb" afterDir="false" />
-    </list>
+    <list default="true" id="1f4c1aae-598d-46ed-83e7-beb3ac8d13eb" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -231,7 +219,7 @@
       <workItem from="1527358754865" duration="261000" />
       <workItem from="1527368223629" duration="1973000" />
       <workItem from="1527370507981" duration="676000" />
-      <workItem from="1527409533448" duration="2839000" />
+      <workItem from="1527409533448" duration="3202000" />
     </task>
     <task id="LOCAL-00001" summary="datepicker">
       <created>1527370827074</created>
@@ -240,11 +228,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527370827074</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="quelques modifications de la vue">
+      <created>1527414367361</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1527414367361</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17546000" />
+    <option name="totallyTimeSpent" value="17909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="56" width="1301" height="744" extended-state="0" />
@@ -287,7 +282,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="datepicker" />
-    <option name="LAST_COMMIT_MESSAGE" value="datepicker" />
+    <MESSAGE value="quelques modifications de la vue" />
+    <option name="LAST_COMMIT_MESSAGE" value="quelques modifications de la vue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
