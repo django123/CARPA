@@ -4,7 +4,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title"><%= "#{params[:action].titleize} Archive Courrier Entrant" %></h4>
+            <h4 class="modal-title"><%= "#{params[:action].titleize} Archivage d'un Courrier Entrant" %></h4>
           </div>
           <div class="modal-body">
             <%= f.error_notification %>
@@ -14,7 +14,7 @@
               <%= f.input :name %>
               <%= f.input :reference %>
               <%= f.input :file, input_html: { multiple: 'multiple' } %>
-              <%= f.association :entry_courier, :label_method => lambda{ |courier| "#{entry_courier.orderNumber}"} %>
+              <%= f.association :entry_courier, :label_method => lambda{ |entry_courier| "#{entry_courier.orderNumber}"} %>
               <%= f.association :user,:label_method => lambda{ |user| "#{user.lName} #{user.fName}" } %>
             </div>
 

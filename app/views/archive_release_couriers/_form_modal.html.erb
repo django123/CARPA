@@ -15,7 +15,7 @@
               <%= f.input :name %>
               <%= f.input :reference %>
               <%= f.input :file, input_html: { multiple: 'multiple' } %>
-              <%= f.association :release_courier, :label_method => lambda{ |release_courier| "#{release_courier} "} %>
+              <%= f.association :release_courier, :label_method => lambda{ |release_courier| "#{release_courier.reference} "} %>
               <%= f.association :user, :label_method => lambda{ |user| "#{user.lName} #{user.fName}" } %>
             </div>
           </div>

@@ -1,7 +1,7 @@
 
 <div class="panel panel-success">
   <div class="panel-heading">
-    <h3 class="panel-title"><%= "#{params[:action].titleize} Archive Courrier Entrant" %></h3>
+    <h3 class="panel-title"><%= "#{params[:action].titleize} Archivage d'un Courrier Entrant" %></h3>
   </div>
   <div class="panel-body">
     <%= simple_form_for(@archive_entry_courier) do |f| %>
@@ -15,7 +15,7 @@
           <%= f.input :name %>
           <%= f.input :reference %>
           <%= f.input :file, input_html: { multiple: 'multiple' } %>
-          <%= f.association :entry_courier, :label_method => lambda{ |courier| "#{entry_courier.orderNumber}"} %>
+          <%= f.association :entry_courier, :label_method => lambda{ |entry_courier| "#{entry_courier.orderNumber}"} %>
           <%= f.association :user,:label_method => lambda{ |user| "#{user.lName} #{user.fName}" } %>
         </div>
 
