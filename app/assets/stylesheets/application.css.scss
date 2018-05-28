@@ -11,11 +11,11 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require jquery-ui/core
+ *= require jquery-ui/theme.css.erb
  *= require datatables
  *= require dataTables/jquery.dataTables.scss
- *= require dataTables/jquery.dataTables
- * require jquery.fileupload
- * require jquery.fileupload-ui
+ *= require dataTables/src/demo_table_jui
  *= require flatpickr
  *= require_self
  */

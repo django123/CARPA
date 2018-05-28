@@ -8,15 +8,16 @@ gem 'rails', '~> 5.2.0'
 # Use sqlite3 as the database for Active Record
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
-
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 5.0'
+
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -68,31 +69,27 @@ group :test do
   gem 'chromedriver-helper'
 end
 
+
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #gem pour le projet
+
+gem 'jquery-ui-rails'
+#gem 'jquery-rails'
+gem 'jquery'
 gem 'devise'
 gem 'bootstrap-sass'
 gem 'enumerize', '~> 2.2', '>= 2.2.2'
 gem 'simple_form'
-gem 'jquery-rails'
-gem 'jquery'
 gem 'simple-form-datepicker', '~> 0.1.3'
 gem 'carrierwave', '~> 1.2', '>= 1.2.2'
 gem 'mini_magick', '~> 4.8'
 gem 'paperclip'
 gem 'cancancan'
-gem 'aasm', '~> 4.12', '>= 4.12.3'
-gem 'faker'
-#gem 'jquery-datatables-rails', '~> 3.4'
-#gem 'rails-assets-jquery'
-#gem 'rails-datatables'
-gem 'rails_layout'
-gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
 gem 'kaminari'
 gem 'client_side_validations'
 gem 'client_side_validations-simple_form'
-gem 'shrine', '~> 2.10', '>= 2.10.1'
 gem 'rails_admin', git: 'https://github.com/sferik/rails_admin.git'
 gem 'rails_admin_rollincode', '~> 1.2', '>= 1.2.1'
 gem 'i18n', '~> 1.0', '>= 1.0.1'
@@ -105,3 +102,6 @@ gem "cocoon"
 gem 'bootstrap-glyphicons'
 gem 'webpacker', '~> 3.5', '>= 3.5.3'
 gem 'flatpickr'
+gem 'rails_layout'
+gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
+gem 'will_paginate'
