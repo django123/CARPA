@@ -72,6 +72,10 @@ class EntryCouriersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def entry_courier_params
-      params.require(:entry_courier).permit(:reference, :subject, :sender, :receveir, :duration, :sentDate, :orderNumber, :file, :user_id, :project_id)
+      params.require(:entry_courier).permit(:reference, :subject,
+                                            :sender, :receveir,
+                                            :duration, :sentDate,
+                                            :orderNumber, :user_id,
+                                            :project_id,{file: []})
     end
 end

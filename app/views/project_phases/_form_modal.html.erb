@@ -1,5 +1,5 @@
 <div class="modal fade" id="form_modal">
-  <%= simple_form_for @project_phase,validate: true do |f| %>
+  <%= simple_form_for @project_phase,:html => {:multipart => true},validate: true do |f| %>
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">

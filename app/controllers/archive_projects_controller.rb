@@ -71,6 +71,8 @@ class ArchiveProjectsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def archive_project_params
-      params.require(:archive_project).permit(:user_id, :project_id, :description, :name, :reference, :file)
+      params.require(:archive_project).permit(:user_id, :project_id,
+                                              :description, :name,
+                                              :reference, {file: []})
     end
 end

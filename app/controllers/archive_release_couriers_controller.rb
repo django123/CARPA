@@ -71,6 +71,8 @@ class ArchiveReleaseCouriersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def archive_release_courier_params
-      params.require(:archive_release_courier).permit(:user_id, :release_courier_id, :description, :name, :reference, :file)
+      params.require(:archive_release_courier).permit(:user_id, :release_courier_id,
+                                                      :description, :name,
+                                                      :reference, {file: []})
     end
 end

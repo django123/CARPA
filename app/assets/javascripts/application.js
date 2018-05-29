@@ -13,6 +13,7 @@
 //= require jquery
 //= require datatables
 //= require dataTables/jquery.dataTables
+//= require jquery-ui/widgets/datepicker
 //= require rails-ujs
 //= require turbolinks
 //= require bootstrap-sprockets

@@ -17,7 +17,7 @@
             <%= f.input :duration, order: [:day, :month, :year] %>
             <%= f.input :sentDate , order: [:day, :month, :year]%>
             <%= f.input :orderNumber %>
-            <%= f.input :file %>
+            <%= f.input :file,input_html: { multiple: 'multiple'} %>
             <%= f.association :user,:label_method => lambda{ |user| "#{user.lName} #{user.fName}" } %>
             <%= f.association :project, :label_method => lambda{ |project| "#{project.reference}"} %>
           </div>

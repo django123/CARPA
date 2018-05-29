@@ -2,7 +2,7 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
-
+    can :access, :rails_admin
     if user
       if user.kind == :CST
         can :access, :rails_admin

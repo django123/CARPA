@@ -1,5 +1,5 @@
 class PhaseProjectsDatatable
-
+=begin
   delegate :params, :h, :link_to, to: :@view
 
   def initialize(view)
@@ -46,7 +46,7 @@ class PhaseProjectsDatatable
   end
 
   def per_page
-      params[:iDisplayLength].to_i > 0 ? params[:iDisplayLength].to_i :10
+      #params[:iDisplayLength].to_i > 0 ? params[:iDisplayLength].to_i :10
   end
 
   def sort_column
@@ -57,4 +57,5 @@ class PhaseProjectsDatatable
   def sort_direction
       params[:sSortDir_0] == "desc" ?  "desc" : "asc"
   end
+=end
 end

@@ -1,5 +1,5 @@
 class ArchiveEntryCouriersDatatable < ApplicationDatatable
-
+=begin
   def data
     archive_entry_couriers.map do |archive_entry_courier|
      [].tap do |column|
@@ -36,4 +36,5 @@ class ArchiveEntryCouriersDatatable < ApplicationDatatable
   def columns
     %w(user_id  entry_courier_id  description  name  reference  file)
   end
+=end
 end

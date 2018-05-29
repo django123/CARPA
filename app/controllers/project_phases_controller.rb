@@ -71,6 +71,6 @@ class ProjectPhasesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def project_phase_params
-      params.require(:project_phase).permit(:document, :phase, :description, :project_id)
+      params.require(:project_phase).permit(:phase, :description, :project_id, {document: []})
     end
 end

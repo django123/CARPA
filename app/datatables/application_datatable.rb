@@ -1,5 +1,5 @@
 class ApplicationDatatable
-
+=begin
   delegate :params, to: :@view
 
   def initialize(view)
@@ -21,6 +21,7 @@ class ApplicationDatatable
   end
 
   def per_page
-    params[:length].to_i > 0 ? params[:length].to_i :10
+    #params[:length].to_i > 0 ? params[:length].to_i :10
   end
+=end
 end
