@@ -7,3 +7,5 @@ jQuery ->
     bJQueryUI: true
     bProcessing: true
 
+  $('#project_datepicker').datepicker
+    dateFormat: 'dd-mm-yy'

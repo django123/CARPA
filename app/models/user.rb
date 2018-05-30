@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+
+  scope :active_users, -> { where(active: true)}
+  scope :inactive_users, -> { where(active: false)}
   extend Enumerize
   enumerize :kind,in: [:President, :CST, :ET1, :ET2, :EJ1, :EJ2,:Assistante_PR,:Assistante_CST ]
 

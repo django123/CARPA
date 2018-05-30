@@ -2,6 +2,9 @@ class EntryCourier < ApplicationRecord
   belongs_to :user
   belongs_to :project
   has_many :archive_entry_couriers
+
+  scope :active_entry_couriers, -> { where(active: true)}
+  scope :inactive_entry_couriers, -> { where(active: false)}
   validates_presence_of :reference, :sender
   validates_uniqueness_of :reference
   mount_uploader :file, FileUploader

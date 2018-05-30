@@ -11,17 +11,17 @@
             <th>Objet du projet</th>
             <th>Nom du Projet</th>
             <th>Description du Projet</th>
-            <th>Secteur d'activité</th>
+            <!--<th>Secteur d'activité</th>-->
             <th>Point focal CARPA</th>
             <th>Situation du projet</th>
             <th>Partenaire Public</th>
             <th>Partenaire Privé</th>
             <th>Montant de l'investissement</th>
-            <th>Procédure</th>
+          <!--<<th>Procédure</th>-->
             <th>Durée du contrat</th>
-            <th>Date de création du projet</th>
-            <th>User</th>
-            <!--<th colspan="3"></th>-->
+          <!--<<th>Date de création du projet</th>
+          <th>User</th>-->
+          <!--<th colspan="3"></th>-->
         </tr>
     </thead>
 
@@ -32,48 +32,36 @@
                     <%= link_to project.reference, project %>
                 </td>
                 <td>
-                    <%= project.object_project %>
+                    <%= link_to  project.object_project, project %>
                 </td>
                 <td>
-                  <%= project.projectName%>
+                  <%= link_to project.projectName, project%>
                 </td>
                 <td>
-                  <%= project.projectDescription%>
+                  <%= link_to project.projectDescription, project%>
+                </td>
+
+                <td>
+                    <%= link_to project.focal_point, project %>
                 </td>
                 <td>
-                  <%= project.secteurActivite%>
+                    <%= link_to project.project_situation, project %>
                 </td>
                 <td>
-                    <%= project.focal_point %>
+                    <%= link_to project.public_partenership, project %>
                 </td>
                 <td>
-                    <%= project.project_situation %>
+                    <%= link_to project.private_partenership, project %>
                 </td>
                 <td>
-                    <%= project.public_partenership %>
+                    <%= link_to project.amount, project %>
                 </td>
-                <td>
-                    <%= project.private_partenership %>
-                </td>
-                <td>
-                    <%= project.amount %>
-                </td>
+
+
 
                <td>
-                 <%= project.procedure %>
+                <%= link_to project.contratDuration, project %>
                </td>
-
-               <td>
-                <%= project.contratDuration %>
-               </td>
-
-                <td>
-                    <%= project.duration %>
-                </td>
-
-                <td>
-                    <%= project.user.lName %>
-                </td>
 
                 <!--<td>
                     <%= link_to 'Show', project %>

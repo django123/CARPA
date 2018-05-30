@@ -7,3 +7,5 @@ jQuery ->
     sPaginationType: "full_numbers"
     bJQueryUI: true
     bProcessing: true
+  $('#release_courier_datepicke').datepicker
+    dateFormat: 'dd-mm-yy'

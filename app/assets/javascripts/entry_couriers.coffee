@@ -8,3 +8,6 @@ jQuery ->
     sPaginationType: "full_numbers"
     bJQueryUI: true
     bProcessing: true
+
+  $('#entry_courier_datepicker').datepicker
+    dateFormat: 'dd-mm-yy'

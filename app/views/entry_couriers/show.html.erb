@@ -6,6 +6,20 @@
   <div class="col-md-12">
     <div class="panel panel-success">
       <div class="panel-heading">
+        <h3 class="panel-title"><strong>Numero d'ordre</strong></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= @entry_courier.orderNumber %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
         <h3 class="panel-title"><strong>Reference</strong></h3>
       </div>
       <div class="panel-body">
@@ -71,10 +85,22 @@
   <div class="col-md-12">
     <div class="panel panel-success">
       <div class="panel-heading">
-        <h3 class="panel-title"> <strong>Date entrée</strong></h3>
+        <h3 class="panel-title"> <strong>Date d'emission</strong></h3>
       </div>
       <div class="panel-body">
         <%= @entry_courier.duration %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"> <strong>Date de reception</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%= @entry_courier.sentDate %>
       </div>
     </div>
   </div>

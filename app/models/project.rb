@@ -6,6 +6,9 @@ class Project < ApplicationRecord
   has_many :project_phases
   has_many :archive_projects
 
+
+  scope :active_projects, -> { where(active: true)}
+  scope :inactive_projects, -> { where(active: false)}
   validates_presence_of :reference, :object_project,
                         :public_partenership, :private_partenership,
                         :amount
