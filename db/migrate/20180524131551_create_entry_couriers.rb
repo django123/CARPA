@@ -8,7 +8,7 @@ class CreateEntryCouriers < ActiveRecord::Migration[5.2]
       t.date :duration
       t.date :sentDate
       t.string :orderNumber
-      t.string :file
+      t.string :file, array: true, default: [].to_yaml
       t.references :user, foreign_key: true
       t.references :project, foreign_key: true
 

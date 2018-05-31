@@ -10,8 +10,8 @@
             <div class="form-inputs">
               <%= f.input :orderNumber %>
               <%= f.input :reference %>
-
               <%= f.input :destination %>
+              <%= f.input :file,input_html: { multiple: 'multiple'} %>
 
               <%= f.input :date,order: [:day, :month, :year],as: :string, input_html:{ class: "datepicker"} %>
 

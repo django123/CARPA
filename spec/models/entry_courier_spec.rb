@@ -43,7 +43,7 @@ RSpec.describe EntryCourier, type: :model do
     end
 
     it "should  return active entry couriers" do
-      expect(User.active_entry_couriers.size).to eq(2)
+      expect(EntryCourier.active_entry_couriers.size).to eq(2)
     end
 
     it "should  return inactive entry couriers" do

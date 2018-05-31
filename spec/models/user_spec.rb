@@ -47,8 +47,8 @@ RSpec.describe User, type: :model do
       User.new(params).save
       User.new(params).save
       User.new(params.merge(active: true)).save
-      User.new(params.merge(active: false)).save
-      User.new(params.merge(active: false)).save
+      #User.new(params.merge(active: false)).save
+      #User.new(params.merge(active: false)).save
     end
     it "should  return active users" do
         expect(User.active_users.size).to eq(3)

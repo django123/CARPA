@@ -95,3 +95,5 @@ gem 'rails_layout'
 gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
 gem 'will_paginate'
 gem 'rmagick', '~> 2.16'
+#pour les tests et stat
+gem 'simplecov', require: false, group: :test

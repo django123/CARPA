@@ -2,6 +2,9 @@ class ArchiveReleaseCourier < ApplicationRecord
   belongs_to :user
   belongs_to :release_courier
 
+
+  scope :active_a_r_couriers, -> { where(active: true)}
+  scope :inactive_a__couriers, -> { where(active: false)}
   validates_presence_of :name, :reference
 
   mount_uploader :file, FileUploader

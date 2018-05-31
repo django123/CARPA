@@ -6,7 +6,7 @@ class CreateArchiveReleaseCouriers < ActiveRecord::Migration[5.2]
       t.text :description
       t.string :name
       t.string :reference
-      t.string :file
+      t.string :file, array: true, default: [].to_yaml
 
       t.timestamps
     end
