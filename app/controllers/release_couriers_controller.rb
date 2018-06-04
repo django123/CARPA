@@ -71,6 +71,6 @@ class ReleaseCouriersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def release_courier_params
-      params.require(:release_courier).permit(:date, :destination, :reference, :orderNumber, :project_id, :user_id, {file: []})
+      params.require(:release_courier).permit(:date, :destination, :reference, :orderNumber, :project_id, :user_id, {file: [].to_s})
     end
 end

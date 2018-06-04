@@ -73,6 +73,6 @@ class ArchiveProjectsController < ApplicationController
     def archive_project_params
       params.require(:archive_project).permit(:user_id, :project_id,
                                               :description, :name,
-                                              :reference, {file: []})
+                                              :reference, {file: [].to_s})
     end
 end

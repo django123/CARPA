@@ -10,6 +10,7 @@
     <th>Numero d'ordre</th>
     <th>Reférence</th>
     <th>Destination</th>
+    <th>Fichier</th>
     <th>User</th>
     <th>Projet</th>
     <th>Date</th>
@@ -20,12 +21,13 @@
   <tbody>
   <% @release_couriers.each do |releaseCourier| %>
       <tr>
-        <td><%= releaseCourier.orderNumber %></td>
-        <td><%= releaseCourier.reference %></td>
-        <td><%= releaseCourier.destination %></td>
-        <td><%= releaseCourier.user.lName %></td>
-        <td><%= releaseCourier.project.reference %></td>
-        <td><%= releaseCourier.date %></td>
+        <td><%= link_to releaseCourier.orderNumber , releaseCourier %></td>
+        <td><%= link_to releaseCourier.reference, releaseCourier  %></td>
+        <td><%= link_to releaseCourier.destination, releaseCourier  %></td>
+        <td><%= link_to releaseCourier.file , releaseCourier %></td>
+        <td><%= link_to releaseCourier.user.lName, releaseCourier  %></td>
+        <td><%= link_to releaseCourier.project.reference, releaseCourier  %></td>
+        <td><%= link_to releaseCourier.date, releaseCourier  %></td>
         <!--<td><%= link_to 'Show', releaseCourier %></td>
         <td><%= link_to 'Edit', edit_release_courier_path(releaseCourier) %></td>
         <td><%= link_to 'Destroy', releaseCourier, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->

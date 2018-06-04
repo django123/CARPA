@@ -73,6 +73,6 @@ class ArchiveReleaseCouriersController < ApplicationController
     def archive_release_courier_params
       params.require(:archive_release_courier).permit(:user_id, :release_courier_id,
                                                       :description, :name,
-                                                      :reference, {file: []})
+                                                      :reference, {file: [].to_s})
     end
 end

@@ -73,6 +73,6 @@ class ArchiveEntryCouriersController < ApplicationController
     def archive_entry_courier_params
       params.require(:archive_entry_courier).permit(:user_id, :entry_courier_id,
                                                     :description, :name,
-                                                    :reference, {file: []})
+                                                    :reference, {file: [].to_s})
     end
 end
