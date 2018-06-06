@@ -3,6 +3,8 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "3.5",
+    "chart.js": "^2.7.2",
+    "chartkick": "^2.3.6",
     "flatpickr": "^4.5.0"
   },
   "devDependencies": {

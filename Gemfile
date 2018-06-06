@@ -97,3 +97,7 @@ gem 'will_paginate'
 gem 'rmagick', '~> 2.16'
 #pour les tests et stat
 gem 'simplecov', require: false, group: :test
+#pour les graphes sur rails_admin
+# gem 'rails_admin_dynamic_charts', github: 'openjaf/rails_admin_dynamic_charts'
+ #gem 'chartkick'
+gem 'rails_admin_charts'

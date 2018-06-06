@@ -11,6 +11,9 @@
 // about supported directives.
 //
 //= require jquery
+// require Chart.bundle
+// require chartkick
+// require jquery-ui/sortable
 //= require datatables
 //= require dataTables/jquery.dataTables
 //= require jquery-ui/widgets/datepicker

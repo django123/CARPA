@@ -1,5 +1,6 @@
 RailsAdmin.config do |config|
 
+  #include RailsAdminDynamicCharts::Datetime
   ### Popular gems integration
 
   config.main_app_name = ["CARPA", "Administration"]
@@ -32,6 +33,8 @@ RailsAdmin.config do |config|
 
   #my models
 
+
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
@@ -42,6 +45,8 @@ RailsAdmin.config do |config|
     edit
     delete
     show_in_app
+    #all # NB: comment out this line for RailsAdmin < 0.6.0
+    #charts
 
     ## With an audit adapter, you can add:
     # history_index

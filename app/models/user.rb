@@ -1,5 +1,6 @@
 class User < ApplicationRecord
 
+  include RailsAdminCharts
   scope :active_users, -> { where(active: true)}
   scope :inactive_users, -> { where(active: false)}
   extend Enumerize
@@ -19,5 +20,7 @@ class User < ApplicationRecord
        has_many :projects
        has_many :archive_projects
        has_many :archive_entry_couriers
+
+
 
 end
