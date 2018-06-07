@@ -101,3 +101,5 @@ gem 'simplecov', require: false, group: :test
 # gem 'rails_admin_dynamic_charts', github: 'openjaf/rails_admin_dynamic_charts'
  #gem 'chartkick'
 gem 'rails_admin_charts'
+gem 'friendly_id', '~> 5.1.0'
+gem 'mail_form'

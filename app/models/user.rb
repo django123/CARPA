@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-
+  #include MailForm::Delivery
   include RailsAdminCharts
   scope :active_users, -> { where(active: true)}
   scope :inactive_users, -> { where(active: false)}
@@ -21,6 +21,19 @@ class User < ApplicationRecord
        has_many :archive_projects
        has_many :archive_entry_couriers
 
+  after_create :welcome_send
+  def welcome_send
+    WelcomeMailer.welcome_send(self).deliver
+    #redirect_to root_path, alert: "Merci pour votre connexion sur l'application"
 
+  end
+=begin
+  def headers
+    {
+        :subject => "My Contact Form",
+        :to => "your.email@your.domain.com"
+    }
+  end
+=end
 
 end
