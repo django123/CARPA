@@ -1,5 +1,7 @@
 class ProjectPhase < ApplicationRecord
   include RailsAdminCharts
+  #extend FriendlyId
+   include RailsAdminCharts
   extend Enumerize
   enumerize :phase, in:[:APMI,:AOR,:DPRE,:OF,:ADJ,:NTC,:SUIVI]
   belongs_to :project

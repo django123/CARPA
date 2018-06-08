@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   #include MailForm::Delivery
+  extend FriendlyId
   include RailsAdminCharts
   scope :active_users, -> { where(active: true)}
   scope :inactive_users, -> { where(active: false)}

@@ -1,4 +1,6 @@
 class Project < ApplicationRecord
+  #extend FriendlyId
+  include RailsAdminCharts
   extend Enumerize
   enumerize :procedure, in:[:Concurrence, :Dispense]
   belongs_to :user
@@ -13,5 +15,9 @@ class Project < ApplicationRecord
                         :public_partenership, :private_partenership,
                         :amount
   validates_uniqueness_of :reference, :object_project
+
+  #friendly_id :name, use:  :slugged
+
+
 
 end

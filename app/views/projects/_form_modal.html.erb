@@ -26,6 +26,9 @@
               <%= f.association :user,:label_method => lambda{ |user| "#{user.lName} #{user.fName}" } %>
             </div>
           </div>
+          <div class="modal-footer">
+            <%= f.button :submit, class: 'submit btn btn-success btn-xs round' %>
+          </div>
         </div>
       </div>
   <% end %>
