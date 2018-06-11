@@ -14,8 +14,8 @@
               <%= f.input :subject %>
               <%= f.input :sender %>
               <%= f.input :receveir %>
-              <%= f.input :duration, order: [:day, :month, :year] %>
-              <%= f.input :sentDate, order: [:day, :month, :year] %>
+              <%= f.input :duration, order: [:day, :month, :year],as: :string, input_html:{ id: "entry_courier_datepicker"},placeholder: 'dd-mm-yy' %>
+              <%= f.input :sentDate, order: [:day, :month, :year],as: :string, input_html:{ id: "entry_courier_datepicker"},placeholder: 'dd-mm-yy' %>
               <%= f.input :orderNumber %>
               <%= f.input :file, as: :file, input_html: { multiple: 'multiple' }%>
               <%= f.association :user, :label_method => lambda{ |user| "#{user.lName} #{user.fName}" } %>

@@ -6,6 +6,8 @@ jQuery ->
     sPaginationType: "full_numbers"
     bJQueryUI: true
     bProcessing: true
+    bServerSide: true
+    sAjaxSource: $('#projects').data('source')
 
-  $('#project_datepicker').datepicker
+  $('.project_datepicker').datepicker
     dateFormat: 'dd-mm-yy'

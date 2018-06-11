@@ -23,16 +23,19 @@
 //= require bootstrap.js
 //= require_tree .
 
-$(document).on('turbolinks:load', function(){
-  $("table[role='datatable']").each(function(){
-      $(this).DataTable({
+//$(document).ready( function(){
+  //$("table[role='datatable']").each(function(){
+      //$("#datatable").dataTable({
+          //pagingType: "full_numbers",
           //processing: true,
           //serverSide: true,
-          //ajax: $(this).data('url')
-          responsive: true
-      });
-  });
-})
+          //ajax: $(#datatable).data('source'),
+          //responsive: true
+      //});
+  //});
+//})
+
+//turbolinks:load'
 
 flatpickr(".datepicker");
 

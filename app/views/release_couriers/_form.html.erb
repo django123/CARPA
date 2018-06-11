@@ -13,7 +13,7 @@
               <%= f.input :destination %>
               <%= f.input :file,input_html: { multiple: 'multiple'} %>
 
-              <%= f.input :date,order: [:day, :month, :year],as: :string, input_html:{ class: "datepicker"} %>
+              <%= f.input :date,order: [:day, :month, :year],as: :string, input_html:{ class: "release_courier_datepicker"},placeholder: 'dd-mm-yy' %>
 
               <%= f.association :user, :label_method => lambda{ |user| "#{user.lName} #{user.fName}"} %>
 

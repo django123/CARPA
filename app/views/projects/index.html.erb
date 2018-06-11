@@ -4,7 +4,7 @@
 
 <h1>Projects</h1>
 <!--role="datatable"-->
-<table  class="display responsive no-wrap" id="projects" class="display">
+<table  class="display " id="projects" data-source="<%= projects_url(format: "json") %>">
     <thead>
         <tr class="success">
             <th>Reference</th>
@@ -24,56 +24,8 @@
           <!--<th colspan="3"></th>-->
         </tr>
     </thead>
-
     <tbody>
-        <% @projects.each do |project| %>
-            <tr>
-                <td>
-                    <%= link_to project.reference, project %>
-                </td>
-                <td>
-                    <%= link_to  project.object_project, project %>
-                </td>
-                <td>
-                  <%= link_to project.projectName, project%>
-                </td>
-                <td>
-                  <%= link_to project.projectDescription, project%>
-                </td>
 
-                <td>
-                    <%= link_to project.focal_point, project %>
-                </td>
-                <td>
-                    <%= link_to project.project_situation, project %>
-                </td>
-                <td>
-                    <%= link_to project.public_partenership, project %>
-                </td>
-                <td>
-                    <%= link_to project.private_partenership, project %>
-                </td>
-                <td>
-                    <%= link_to project.amount, project %>
-                </td>
-
-
-
-               <td>
-                <%= link_to project.contratDuration, project %>
-               </td>
-
-                <!--<td>
-                    <%= link_to 'Show', project %>
-                </td>
-                <td>
-                    <%= link_to 'Edit', edit_project_path(project) %>
-                </td>
-                <td>
-                    <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %>
-                </td>-->
-            </tr>
-            <% end %>
     </tbody>
 </table>
 

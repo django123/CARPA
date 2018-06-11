@@ -6,7 +6,11 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.json
   def index
-    @projects = Project.all
+    #@projects = Project.all
+    respond_to do |format|
+      format.html
+      format.json { render json: ProjectsDatatable.new(view_context) }
+    end
   end
 
   # GET /projects/1
@@ -67,7 +71,7 @@ class ProjectsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_project
-      @project = Project.find(params[:id])
+      @project = Project.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
@@ -78,6 +82,6 @@ class ProjectsController < ApplicationController
                                       :focal_point, :object_project,
                                       :procedure, :contratDuration,
                                       :projectName, :secteurActivite,
-                                      :projectDescription, :user_id)
+                                      :projectDescription, :user_id, :slug)
     end
 end

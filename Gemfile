@@ -103,3 +103,4 @@ gem 'simplecov', require: false, group: :test
 gem 'rails_admin_charts'
 gem 'friendly_id', '~> 5.1.0'
 gem 'mail_form'
+gem 'sendgrid-ruby'
