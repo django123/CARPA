@@ -94,4 +94,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   config.gem "cancan"
+
+  #pour la gestion des erreurs
+  #config.exception_handler = { social: { fusion: "flutils" }}
 end

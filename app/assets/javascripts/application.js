@@ -11,13 +11,12 @@
 // about supported directives.
 //
 //= require jquery
-// require Chart.bundle
-// require chartkick
-// require jquery-ui/sortable
+//= require rails-ujs
+//= require bootstrap-sprockets
+//= require dropzone
 //= require datatables
 //= require dataTables/jquery.dataTables
 //= require jquery-ui/widgets/datepicker
-//= require rails-ujs
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require bootstrap.js
@@ -37,10 +36,6 @@
 
 //turbolinks:load'
 
-flatpickr(".datepicker");
-
-Turbolinks.enableProgressBar();
-Turbolinks.enableTransitionCache();
 
 
 window.ClientSideValidations.callbacks.element.fail = function(element, message, callback) {

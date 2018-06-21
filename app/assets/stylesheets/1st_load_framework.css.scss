@@ -865,9 +865,7 @@ $page-header-border-color:    $gray-lighter !default;
 $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
-// import the CSS framework
-@import "bootstrap-sprockets";
-@import "bootstrap";
+
 
 //
 //##
@@ -929,7 +927,9 @@ $navbar-inverse-toggle-hover-bg:            #333 !default;
 $navbar-inverse-toggle-icon-bar-bg:         #fff !default;
 $navbar-inverse-toggle-border-color:        #333 !default;
 
-
+// import the CSS framework
+@import "bootstrap-sprockets";
+@import "bootstrap";
 // make all images responsive by default
 img {
   @extend .img-responsive;
@@ -969,8 +969,9 @@ main {
   @extend .container;
   background-color: #eee;
   padding-bottom: 80px;
-  width: 110%;
+  width: 1180px;
   margin-top: 51px; // accommodate the navbar
+
 
 }
 section {

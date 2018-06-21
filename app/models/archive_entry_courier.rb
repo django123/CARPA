@@ -11,5 +11,5 @@ class ArchiveEntryCourier < ApplicationRecord
                         content_type: { content_type: [
                           "image/jpeg", "image/gif", "image/png", "application/pdf"
                           ]}
-  serialize :file, JSON
+  #serialize :file, JSON
 end

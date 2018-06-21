@@ -1,15 +1,12 @@
 class User < ApplicationRecord
+  rolify :before_add => :before_add_method
 
-  #include MailForm::Delivery
-  #extend FriendlyId
   include RailsAdminCharts
   scope :active_users, -> { where(active: true)}
   scope :inactive_users, -> { where(active: false)}
   extend Enumerize
   enumerize :kind,in: [:President, :CST, :ET1, :ET2, :EJ1, :EJ2,:Assistante_PR,:Assistante_CST ]
 
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
          validates_presence_of :lName, :email, :adress, :phone,
@@ -23,6 +20,8 @@ class User < ApplicationRecord
        has_many :archive_projects
        has_many :archive_entry_couriers
 
-
+  def before_add_method(role)
+    # do something before it gets added
+  end
 
 end

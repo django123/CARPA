@@ -8,6 +8,7 @@ jQuery ->
     bProcessing: true
     bServerSide: true
     sAjaxSource: $('#projects').data('source')
+    "aaSorting": [[ 0, "desc" ]]
 
   $('.project_datepicker').datepicker
     dateFormat: 'dd-mm-yy'

@@ -17,5 +17,5 @@ class ArchiveReleaseCourier < ApplicationRecord
                           #"image/jpeg", "image/gif", "image/png", "application/pdf"
                           #]}
 
-  serialize :file, JSON
+  #serialize :file, JSON
 end

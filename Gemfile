@@ -63,9 +63,9 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #gem pour le projet
-
+gem 'bootsnap', '>= 1.1.0', require: false
 gem 'jquery-ui-rails'
-#gem 'jquery-rails'
+gem 'jquery-rails'
 gem 'jquery'
 gem 'devise'
 gem 'bootstrap-sass'
@@ -97,10 +97,10 @@ gem 'will_paginate'
 gem 'rmagick', '~> 2.16'
 #pour les tests et stat
 gem 'simplecov', require: false, group: :test
-#pour les graphes sur rails_admin
-# gem 'rails_admin_dynamic_charts', github: 'openjaf/rails_admin_dynamic_charts'
- #gem 'chartkick'
 gem 'rails_admin_charts'
-gem 'friendly_id', '~> 5.1.0'
 gem 'mail_form'
 gem 'sendgrid-ruby'
+gem 'rolify'
+#gem 'rails_exception_handler', '~> 2.4', '>= 2.4.1'
+gem 'exception_handler', '~> 0.7.7.0'
+

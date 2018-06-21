@@ -9,5 +9,14 @@ jQuery ->
     bJQueryUI: true
     bProcessing: true
 
-  $('#entry_courier_datepicker').datepicker
+  $('.entry_courier_datepicker').datepicker
     dateFormat: 'dd-mm-yy'
+
+
+  $('input.datepicker').each (input) ->
+    $(this).datepicker
+      dateFormat: 'yy-mm-dd'
+      altField: $(this).next()
+    # If you use i18n-js you can set the locale like that
+    $(this).datepicker 'option', $.datepicker.regional[I18n.currentLocale()]
+  return

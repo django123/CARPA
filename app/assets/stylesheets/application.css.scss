@@ -12,13 +12,12 @@
  *
  *= require_tree .
  *= require jquery-ui/core
- * require jquery-ui/sortable
+*= require dropzone/dropzone
  *= require jquery-ui/theme.css.erb
  *= require datatables
  *= require jquery-ui/datepicker
  *= require dataTables/jquery.dataTables.scss
  *= require dataTables/src/demo_table_jui
- *= require flatpickr
  *= require_self
  */
 @import 'bootstrap/glyphicons';
