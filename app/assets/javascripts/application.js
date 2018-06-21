@@ -20,6 +20,8 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require bootstrap.js
+//= require Chart.bundle
+//= require chartkick
 //= require_tree .
 
 //$(document).ready( function(){
@@ -36,7 +38,16 @@
 
 //turbolinks:load'
 
-
+$(document).on('turbolinks:load', function(event) {
+    var chart;
+    chart = Chartkick.charts['project_phase'].getChartObject();
+    setInterval((function() {
+        var indexToUpdate;
+        indexToUpdate = Math.round(Math.random() * 30);
+        chart.data.datasets[0].data[indexToUpdate] = Math.random() * 100;
+        chart.update();
+    }), 10);
+});
 
 window.ClientSideValidations.callbacks.element.fail = function(element, message, callback) {
     $('.submit').prop("disabled",true);

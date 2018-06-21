@@ -103,4 +103,7 @@ gem 'sendgrid-ruby'
 gem 'rolify'
 #gem 'rails_exception_handler', '~> 2.4', '>= 2.4.1'
 gem 'exception_handler', '~> 0.7.7.0'
+#graphe
+ gem 'chartkick', '~> 2.3', '>= 2.3.5'
+#gem 'rails_admin_dynamic_charts', github: 'openjaf/rails_admin_dynamic_charts'
 

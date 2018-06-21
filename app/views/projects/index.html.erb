@@ -1,11 +1,11 @@
-<div class="container">
+
   <p id="notice">
     <%= notice %>
   </p>
+    <h1>Projets</h1>
 
-  <h1>Projects</h1>
-  <!--role="datatable"-->
-  <table  class="display " id="projects" data-source="<%=  projects_url(format: "json") %>">
+
+  <table id="projects" class="display">
     <thead>
     <tr class="success">
       <th>Reference</th>
@@ -26,14 +26,30 @@
     </tr>
     </thead>
     <tbody>
-
+      <% @projects.each do |project| %>
+            <tr>
+              <td><%= project.reference %></td>
+              <td><%= project.object_project %></td>
+              <td><%= project.projectName %></td>
+              <td><%= project.projectDescription %></td>
+              <td><%= project.focal_point %></td>
+              <td><%= project.project_situation %></td>
+              <td><%= project.public_partenership %></td>
+              <td><%= project.private_partenership %></td>
+              <td><%= project.amount %></td>
+              <td><%= project.contratDuration %></td>
+            </tr>
+      <% end %>
     </tbody>
   </table>
 
   <br>
-  <div class="form-actions">
 
+  <%= bar_chart Project.group(:reference).sum(:amount),
+                 id: 'project_phase',
+                 library: { animation: { easing: 'easeOutQuad' }} %>
+  <br>
+  <div class="form-actions">
     <%= link_to 'Ajouter un Projet', new_project_path, remote: true,class: 'submit btn btn-success btn-xs round' %>
   </div>
 
-</div>

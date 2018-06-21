@@ -6,11 +6,13 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.json
   def index
-    #@projects = Project.all
+    @projects = Project.all
+=begin
     respond_to do |format|
       format.html
       format.json { render json: ProjectsDatatable.new(view_context) }
     end
+=end
   end
 
   # GET /projects/1
