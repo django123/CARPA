@@ -1,6 +1,5 @@
 class ArchiveProject < ApplicationRecord
-  #extend FriendlyId
-  include RailsAdminCharts
+
   belongs_to :user
   belongs_to :project
 

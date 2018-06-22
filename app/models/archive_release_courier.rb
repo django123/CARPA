@@ -1,7 +1,6 @@
 class ArchiveReleaseCourier < ApplicationRecord
 
-  #extend FriendlyId
-  include RailsAdminCharts
+
   belongs_to :user
   belongs_to :release_courier
 

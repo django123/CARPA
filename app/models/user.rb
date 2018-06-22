@@ -24,4 +24,6 @@ class User < ApplicationRecord
     # do something before it gets added
   end
 
+
+
 end

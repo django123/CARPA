@@ -34,6 +34,9 @@
 </table>
 
 <br>
+<%= bar_chart ProjectPhase.group(:phase).sum(:project_id),
+              id: 'project_phase',
+              library: { animation: { easing: 'easeOutQuad' }} %>
 <br>
 <div class="form-actions">
   <%= link_to 'Nouvelle Phase du Projet', new_project_phase_path, remote: true, class: 'submit btn btn-success btn-xs round'  %>

@@ -1,6 +1,5 @@
 class Project < ApplicationRecord
-  #extend FriendlyId
-  include RailsAdminCharts
+
   extend Enumerize
   enumerize :procedure, in:[:Concurrence, :Dispense]
   belongs_to :user

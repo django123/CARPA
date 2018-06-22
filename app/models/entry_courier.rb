@@ -1,7 +1,6 @@
 class EntryCourier < ApplicationRecord
 
   include RailsAdminCharts
-  #extend FriendlyId
   belongs_to :user
   belongs_to :project
   has_many :archive_entry_couriers

@@ -1,6 +1,5 @@
 class ArchiveEntryCourier < ApplicationRecord
-  #extend FriendlyId
-  include RailsAdminCharts
+
   belongs_to :user
   belongs_to :entry_courier
   validates_presence_of :name, :reference

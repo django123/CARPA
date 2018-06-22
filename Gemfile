@@ -97,7 +97,6 @@ gem 'will_paginate'
 gem 'rmagick', '~> 2.16'
 #pour les tests et stat
 gem 'simplecov', require: false, group: :test
-gem 'rails_admin_charts'
 gem 'mail_form'
 gem 'sendgrid-ruby'
 gem 'rolify'
@@ -105,5 +104,5 @@ gem 'rolify'
 gem 'exception_handler', '~> 0.7.7.0'
 #graphe
  gem 'chartkick', '~> 2.3', '>= 2.3.5'
+ gem 'rails_admin_charts'
 #gem 'rails_admin_dynamic_charts', github: 'openjaf/rails_admin_dynamic_charts'
-
