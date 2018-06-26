@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1f4c1aae-598d-46ed-83e7-beb3ac8d13eb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/ability.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/ability.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/archive_entry_courier.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/archive_entry_courier.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/archive_project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/archive_project.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/archive_release_courier.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/archive_release_courier.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/entry_courier.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/entry_courier.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/project_phase.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project_phase.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/release_courier.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/release_courier.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/project_phases/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/project_phases/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/rails_admin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/rails_admin.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -182,7 +170,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="11" />
     <option name="y" value="47" />
     <option name="width" value="1398" />
@@ -335,7 +323,7 @@
       <workItem from="1529503285082" duration="2814000" />
       <workItem from="1529570457328" duration="9863000" />
       <workItem from="1529610775927" duration="420000" />
-      <workItem from="1529655446827" duration="3594000" />
+      <workItem from="1529655446827" duration="3856000" />
     </task>
     <task id="LOCAL-00001" summary="datepicker">
       <created>1527370827074</created>
@@ -428,11 +416,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529593109872</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="précompilation">
+      <created>1529670674893</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1529670674893</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172892000" />
+    <option name="totallyTimeSpent" value="173154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="11" y="47" width="1398" height="744" extended-state="1" />
@@ -509,7 +504,8 @@
     <MESSAGE value="cloning tu projet après avoir refait le système" />
     <MESSAGE value="ajout de la gem exception_handler et quelques trucs qui ne donnent pas" />
     <MESSAGE value="debut de la mise sur pied des graphes" />
-    <option name="LAST_COMMIT_MESSAGE" value="debut de la mise sur pied des graphes" />
+    <MESSAGE value="précompilation" />
+    <option name="LAST_COMMIT_MESSAGE" value="précompilation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
