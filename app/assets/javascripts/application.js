@@ -20,23 +20,16 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require bootstrap.js
+//= require moment
+//= require fullcalendar
+//= require daterangepicker
 //= require Chart.bundle
 //= require chartkick
 //= require_tree .
 
-//$(document).ready( function(){
-  //$("table[role='datatable']").each(function(){
-      //$("#datatable").dataTable({
-          //pagingType: "full_numbers",
-          //processing: true,
-          //serverSide: true,
-          //ajax: $(#datatable).data('source'),
-          //responsive: true
-      //});
-  //});
-//})
 
-//turbolinks:load'
+
+//turbolinks: load'
 
 $(document).on('turbolinks:load', function(event) {
     var chart;

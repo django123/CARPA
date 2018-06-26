@@ -11,6 +11,8 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+  *= require fullcalendar
+ *= require daterangepicker
  *= require jquery-ui/core
 *= require dropzone/dropzone
  *= require jquery-ui/theme.css.erb

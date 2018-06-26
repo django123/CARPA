@@ -9,6 +9,7 @@ jQuery ->
     bJQueryUI: true
     bProcessing: true
 
+
   $(document).ready ->
 # disable auto discover
     Dropzone.autoDiscover = false

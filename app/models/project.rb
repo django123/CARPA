@@ -15,12 +15,4 @@ class Project < ApplicationRecord
                         :amount
   validates_uniqueness_of :reference, :object_project
 
-  #friendly_id :reference, use:  :slugged
-
-    #def should_generate_new_friendly_id?
-      #reference_changed? || super
-    #end
-
-
-
 end

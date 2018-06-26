@@ -28,16 +28,16 @@
     <tbody>
       <% @projects.each do |project| %>
             <tr>
-              <td><%= project.reference %></td>
-              <td><%= project.object_project %></td>
-              <td><%= project.projectName %></td>
-              <td><%= project.projectDescription %></td>
-              <td><%= project.focal_point %></td>
-              <td><%= project.project_situation %></td>
-              <td><%= project.public_partenership %></td>
-              <td><%= project.private_partenership %></td>
-              <td><%= project.amount %></td>
-              <td><%= project.contratDuration %></td>
+              <td><%= link_to project.reference, project %></td>
+              <td><%=link_to  project.object_project, project %></td>
+              <td><%=link_to  project.projectName , project%></td>
+              <td><%= link_to project.projectDescription, project %></td>
+              <td><%= link_to project.focal_point, project %></td>
+              <td><%= link_to project.project_situation , project%></td>
+              <td><%= link_to project.public_partenership , project%></td>
+              <td><%= link_to project.private_partenership, project %></td>
+              <td><%= link_to project.amount , project%></td>
+              <td><%= link_to project.contratDuration, project %></td>
             </tr>
       <% end %>
     </tbody>
@@ -45,9 +45,9 @@
 
   <br>
 
-  <%= bar_chart Project.group(:reference).sum(:amount),
+<!--  <#%= bar_chart Project.group(:reference).sum(:amount),
                  id: 'project_phase',
-                 library: { animation: { easing: 'easeOutQuad' }} %>
+                 library: { animation: { easing: 'easeOutQuad' }} %>-->
   <br>
   <div class="form-actions">
     <%= link_to 'Ajouter un Projet', new_project_path, remote: true,class: 'submit btn btn-success btn-xs round' %>
