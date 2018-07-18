@@ -34,7 +34,16 @@ RailsAdmin.config do |config|
   #
 
   #my models
-
+config.model ActiveModel do
+  list do
+    field :assos_field do
+      pretty_value do
+        bindings[:object].assos_field.lName
+      end
+    end
+    include_all_fields
+  end
+end
 
 
   config.actions do
