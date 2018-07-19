@@ -104,5 +104,7 @@ gem 'rolify'
 gem 'exception_handler', '~> 0.7.7.0'
 #graphe
 gem 'chartkick', '~> 2.3', '>= 2.3.5'
- gem 'rails_admin_charts'
+gem 'rails_admin_charts'
+gem 'aasm', '~> 4.12', '>= 4.12.3'
 #gem 'rails_admin_dynamic_charts', github: 'openjaf/rails_admin_dynamic_charts'
+gem 'rails_workflow', '~> 0.7.3'

@@ -17,6 +17,7 @@
             <%= f.input :duration, as: :dapicker, order: [:day, :month, :year],as: :string, input_html:{ class: "entry_courier_datepicker"},placeholder: 'dd-mm-yy' %>
             <%= f.input :sentDate , as: :dapicker, order: [:day, :month, :year],as: :string, input_html:{ class: "entry_courier_datepicker"},placeholder: 'dd-mm-yy' %>
             <%= f.input :orderNumber %>
+            <%= f.input :aasm_state %>
             <%= f.input :file,input_html: { multiple: 'multiple'} %>
             <%= f.association :user,:label_method => lambda{ |user| "#{user.lName} #{user.fName}" } %>
             <%= f.association :project, :label_method => lambda{ |project| "#{project.reference}"} %>

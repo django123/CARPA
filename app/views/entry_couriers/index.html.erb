@@ -13,9 +13,10 @@
           <th>Receveir</th>
           <th>Duration</th>
           <th>Sentdate</th>
-          <th>File</th>
+          <th>Statut du courrier</th>
+<!--          <th>File</th>
           <th>User</th>
-          <th>Project</th>
+          <th>Project</th>-->
         </tr>
     </thead>
     <tbody>
@@ -28,9 +29,10 @@
         <td><%= link_to courier.receveir , courier %></td>
         <td><%= link_to courier.duration , courier %></td>
         <td><%= link_to courier.sentDate , courier %></td>
-        <td><%= link_to courier.file , courier%></td>
-        <td><%= link_to courier.user.lName , courier %></td>
-        <td><%= link_to courier.project.reference , courier%></td>
+        <td><%= link_to courier.aasm_state , courier %></td>
+<!--        <td><%#= link_to courier.file , courier%></td>
+        <td><%#= link_to courier.user.lName , courier %></td>
+        <td><%#= link_to courier.project.reference , courier%></td>-->
       </tr>
       <%end%>
     </tbody>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_26_114348) do
+ActiveRecord::Schema.define(version: 2018_07_19_135514) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -101,6 +101,7 @@ ActiveRecord::Schema.define(version: 2018_06_26_114348) do
     t.string "file_content_type"
     t.integer "file_file_size"
     t.datetime "file_updated_at"
+    t.string "aasm_state"
     t.index ["project_id"], name: "index_entry_couriers_on_project_id"
     t.index ["user_id"], name: "index_entry_couriers_on_user_id"
   end

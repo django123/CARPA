@@ -76,6 +76,6 @@ class EntryCouriersController < ApplicationController
                                             :sender, :receveir,
                                             :duration, :sentDate,
                                             :orderNumber, :user_id,
-                                            :project_id, {file: [].to_s})
+                                            :project_id, :aasm_state,{file: [].to_s})
     end
 end

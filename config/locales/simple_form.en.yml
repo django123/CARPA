@@ -23,6 +23,7 @@ en:
         user_id: "Utilisateur"
         project_id: "Projet"
         orderNumber: "Numéro d'ordre"
+        aasm_state: " Statut Courrier"
 
       project:
         reference: "Code du Projet"
