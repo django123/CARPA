@@ -1,19 +1,19 @@
 <p id="notice">
     <%= notice %>
 </p>
-<h1>Entry Couriers</h1>
+<h1>Courriers Entrants</h1>
 
 <table id="e_couriers" class="display">
     <thead>
         <tr class="success">
           <th>Numero d'ordre</th>
           <th>Reference</th>
-          <th>Subject</th>
-          <th>Sender</th>
-          <th>Receveir</th>
-          <th>Duration</th>
-          <th>Sentdate</th>
-          <th>Statut du courrier</th>
+          <th>Objet</th>
+          <th>Emetteur</th>
+          <th>Recepteur</th>
+          <th>Date d'envoi</th>
+          <th>Date de reception</th>
+<!--          <th>Statut du courrier</th>-->
 <!--          <th>File</th>
           <th>User</th>
           <th>Project</th>-->
@@ -29,7 +29,7 @@
         <td><%= link_to courier.receveir , courier %></td>
         <td><%= link_to courier.duration , courier %></td>
         <td><%= link_to courier.sentDate , courier %></td>
-        <td><%= link_to courier.aasm_state , courier %></td>
+<!--       <td><%#= link_to courier.statut , courier %></td>-->
 <!--        <td><%#= link_to courier.file , courier%></td>
         <td><%#= link_to courier.user.lName , courier %></td>
         <td><%#= link_to courier.project.reference , courier%></td>-->

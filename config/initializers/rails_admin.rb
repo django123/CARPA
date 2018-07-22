@@ -1,9 +1,13 @@
 RailsAdmin.config do |config|
-
+=begin
+  require Rails.root.join('lib', 'rails_admin', 'rails_admin_pdf.rb')
+  RailsAdmin::Config::Actions.register(RailsAdmin::Config::Actions::Pdf)
+=end
   #include RailsAdminDynamicCharts::Datetime
   ### Popular gems integration
 
   config.main_app_name = ["CARPA", "Administration"]
+
   # or something more dynamic
   #config.main_app_name = Proc.new { |controller| [ "CARPA", "Administration- #{controller.params[:action].try(:titleize)}" ] }
 
@@ -38,7 +42,7 @@ config.model ActiveModel do
   list do
     field :assos_field do
       pretty_value do
-        bindings[:object].assos_field.lName
+        bindings[:object].assos_field.user_id
       end
     end
     include_all_fields

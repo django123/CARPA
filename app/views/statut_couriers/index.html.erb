@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Statut Courriers</h1>
+<table id="statut" class="display">
+  <thead>
+  <tr class="success">
+
+    <th>Statut du courrier</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <% @statut_couriers.each do |statut_courier| %>
+    <tr>
+      <td><%= link_to statut_courier.statut , statut_courier %></td>
+
+    </tr>
+  <%end%>
+  </tbody>
+</table>
+<br>
+
+<div class="fomr-actions">
+  <%= link_to 'New Statut Courier', new_statut_courier_path , remote: true,class: 'submit btn btn-success btn-xs round ' %>
+</div>

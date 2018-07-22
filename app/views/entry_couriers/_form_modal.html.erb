@@ -10,19 +10,17 @@
             <%= f.error_notification %>
 
             <div class="form-inputs">
+              <%= f.input :orderNumber %>
               <%= f.input :reference %>
               <%= f.input :subject %>
               <%= f.input :sender %>
               <%= f.input :receveir %>
+              <%= f.input :division %>
               <%= f.input :duration, as: :dapicker, order: [:day, :month, :year],as: :string, input_html:{ class: "entry_courier_datepicker"},placeholder: 'dd-mm-yy' %>
               <%= f.input :sentDate, as: :dapicker, order: [:day, :month, :year],as: :string, input_html:{ class: "entry_courier_datepicker"},placeholder: 'dd-mm-yy' %>
-              <%= f.input :orderNumber %>
-              <%= f.input :aasm_state %>
               <%= f.input :file, as: :file, input_html: { multiple: 'multiple' }%>
               <%= f.association :user, :label_method => lambda{ |user| "#{user.lName} #{user.fName}" } %>
               <%= f.association :project,:label_method => lambda{ |project| "#{project.object_project}"} %>
-
-
             </div>
           </div>
           <div class="modal-footer">

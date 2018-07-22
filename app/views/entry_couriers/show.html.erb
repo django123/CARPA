@@ -29,11 +29,12 @@
     </div>
   </div>
 </div>
+
 <div class="row">
   <div class="col-md-12">
     <div class="panel panel-success">
       <div class="panel-heading">
-        <h3 class="panel-title"><strong>Subject</strong></h3>
+        <h3 class="panel-title"><strong>Objet</strong></h3>
       </div>
       <div class="panel-body">
 
@@ -46,7 +47,7 @@
   <div class="col-md-12">
     <div class="panel panel-success">
       <div class="panel-heading">
-        <h3 class="panel-title"><strong>Sender</strong></h3>
+        <h3 class="panel-title"><strong>Emetteur</strong></h3>
       </div>
       <div class="panel-body">
 
@@ -59,7 +60,7 @@
   <div class="col-md-12">
     <div class="panel panel-success">
       <div class="panel-heading">
-        <h3 class="panel-title"> <strong>Receiver</strong></h3>
+        <h3 class="panel-title"> <strong>Recepteur</strong></h3>
       </div>
       <div class="panel-body">
 
@@ -68,15 +69,28 @@
     </div>
   </div>
 </div>
+
 <div class="row">
   <div class="col-md-12">
     <div class="panel panel-success">
       <div class="panel-heading">
-        <h3 class="panel-title"> <strong>Receiver</strong></h3>
+        <h3 class="panel-title"><strong>Division</strong></h3>
       </div>
       <div class="panel-body">
+        <%= @entry_courier.division %>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <%= @entry_courier.aasm_state %>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"> <strong>Statut du courrier</strong></h3>
+      </div>
+      <div class="panel-body">
+        <%#= @entry_courier.statut %>
       </div>
     </div>
   </div>
@@ -98,7 +112,7 @@
   <div class="col-md-12">
     <div class="panel panel-success">
       <div class="panel-heading">
-        <h3 class="panel-title"> <strong>Date d'emission</strong></h3>
+        <h3 class="panel-title"> <strong>Date d'envoi</strong></h3>
       </div>
       <div class="panel-body">
         <%= @entry_courier.duration %>
@@ -106,6 +120,7 @@
     </div>
   </div>
 </div>
+
 <div class="row">
   <div class="col-md-12">
     <div class="panel panel-success">
@@ -118,11 +133,12 @@
     </div>
   </div>
 </div>
+
 <div class="row">
   <div class="col-md-12">
     <div class="panel panel-success">
       <div class="panel-heading">
-        <h3 class="panel-title"> <strong>User</strong></h3>
+        <h3 class="panel-title"> <strong>Nom</strong></h3>
       </div>
       <div class="panel-body">
 
@@ -131,11 +147,12 @@
     </div>
   </div>
 </div>
+
 <div class="row">
   <div class="col-md-12">
     <div class="panel panel-success">
       <div class="panel-heading">
-        <h3 class="panel-title"><strong>Project</strong></h3>
+        <h3 class="panel-title"><strong>Projet</strong></h3>
       </div>
       <div class="panel-body">
           <%= @entry_courier.project.reference %>

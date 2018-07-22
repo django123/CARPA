@@ -8,6 +8,8 @@ fr:
       ArchiveCourier:  "Archive Courrier"
       ArchiveProject: "Archive Projet"
       ArchiveReleaseCourier: "Archive Courrier Sortant"
+      Suivi: "Suivi du Courrier"
+      StatutCourier: "Statut du courrier"
 
     attributes:
       project:
@@ -29,13 +31,21 @@ fr:
         reference: "Réference"
         subject: "Objet"
         sender: "Expéditeur"
-        receiver: "Destinataire"
+        receveir: "Recepteur"
         sentDate: "Date d'envoi"
-        duration: "Date d'emission"
+        duration: "Date de reception"
         file: "Fichier"
         user_id: "Utilisateur"
         project_id: "Projet"
         orderNumber: "Numéro d'ordre"
+        division: "Division"
+
+      statut_courier:
+         statut: "statut"
+
+      suivi:
+        statut_courier_id: " statut du courier"
+        entry_courier_id: "courrier entrant"
 
       user:
         lName: 'Nom'

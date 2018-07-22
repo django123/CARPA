@@ -16,14 +16,21 @@ en:
         reference: "Réference"
         subject: "Objet"
         sender: "Expéditeur"
-        receiver: "Destinataire"
+        receveir: "Destinataire"
         sentDate: "Date d'envoi"
-        duration: "Date d'emission"
+        duration: "Date de reception"
         file: "Fichier"
         user_id: "Utilisateur"
         project_id: "Projet"
         orderNumber: "Numéro d'ordre"
-        aasm_state: " Statut Courrier"
+        division: "Division"
+
+      statut_courier:
+         statut: "statut"
+
+      suivi:
+        statut_courier_id: " statut du courier"
+        entry_courier_id: "courrier entrant"
 
       project:
         reference: "Code du Projet"

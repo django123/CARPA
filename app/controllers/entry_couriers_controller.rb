@@ -75,7 +75,7 @@ class EntryCouriersController < ApplicationController
       params.require(:entry_courier).permit(:reference, :subject,
                                             :sender, :receveir,
                                             :duration, :sentDate,
-                                            :orderNumber, :user_id,
-                                            :project_id, :aasm_state,{file: [].to_s})
+                                            :orderNumber, :user_id, :division,
+                                            :project_id, file: [].to_s)
     end
 end

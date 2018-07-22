@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :suivis
+  resources :statut_couriers
   resources :events
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 root 'dash_board#index'
