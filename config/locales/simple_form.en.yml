@@ -27,6 +27,7 @@ en:
 
       statut_courier:
          statut: "statut"
+         comment: "Commentaires"
 
       suivi:
         statut_courier_id: " statut du courier"

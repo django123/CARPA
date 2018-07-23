@@ -15,6 +15,21 @@
     </div>
   </div>
 </div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Commentaire</strong></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= @statut_courier.comment %>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="form-actions">
   <%= link_to 'Edit', edit_statut_courier_path(@statut_courier), class: "btn btn-success" %>
   <%= link_to 'Back', statut_couriers_path, class: "btn btn-primary" %>

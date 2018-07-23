@@ -69,6 +69,6 @@ class StatutCouriersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def statut_courier_params
-      params.require(:statut_courier).permit(:statut)
+      params.require(:statut_courier).permit(:statut, :comment)
     end
 end
