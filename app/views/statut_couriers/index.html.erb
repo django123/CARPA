@@ -19,7 +19,7 @@
   </tbody>
 </table>
 <br>
-
+ <%#= bar_chart StatutCourier.group(:statut).sum(:comment), id: 'statut_courier', library: { animation: { easing: 'easeOutQuad' }} %>
 <div class="fomr-actions">
   <%= link_to 'New Statut Courier', new_statut_courier_path , remote: true,class: 'submit btn btn-success btn-xs round ' %>
 </div>

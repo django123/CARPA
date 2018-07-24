@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :trace_sortantes
+  resources :trace_entrants
   resources :suivis
   resources :statut_couriers
   resources :events

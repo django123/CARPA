@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_23_075106) do
+ActiveRecord::Schema.define(version: 2018_07_23_170600) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -163,6 +163,9 @@ ActiveRecord::Schema.define(version: 2018_07_23_075106) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "entry_id_id"
+    t.string "division"
+    t.index ["entry_id_id"], name: "index_release_couriers_on_entry_id_id"
     t.index ["project_id"], name: "index_release_couriers_on_project_id"
     t.index ["user_id"], name: "index_release_couriers_on_user_id"
   end
@@ -192,6 +195,25 @@ ActiveRecord::Schema.define(version: 2018_07_23_075106) do
     t.datetime "updated_at", null: false
     t.index ["entry_courier_id"], name: "index_suivis_on_entry_courier_id"
     t.index ["statut_courier_id"], name: "index_suivis_on_statut_courier_id"
+  end
+
+  create_table "trace_entrants", force: :cascade do |t|
+    t.integer "entry_courier_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "division"
+    t.string "origine"
+    t.datetime "date"
+    t.index ["entry_courier_id"], name: "index_trace_entrants_on_entry_courier_id"
+  end
+
+  create_table "trace_sortantes", force: :cascade do |t|
+    t.integer "release_courier_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.datetime "date"
+    t.string "division"
+    t.index ["release_courier_id"], name: "index_trace_sortantes_on_release_courier_id"
   end
 
   create_table "users", force: :cascade do |t|
