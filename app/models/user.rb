@@ -21,6 +21,7 @@ class User < ApplicationRecord
        has_many :archive_entry_couriers
 
   rails_admin do
+    label "Utilisateur"
     edit do
       exclude_fields :encrypted_password, :reset_password_token,
           :current_sign_in_ip, :remember_created_at, :reset_password_sent_at,

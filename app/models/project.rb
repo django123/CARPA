@@ -15,4 +15,9 @@ class Project < ApplicationRecord
                         :amount
   validates_uniqueness_of :reference, :object_project
 
+  rails_admin do
+    label "Projet"
+
+  end
+
 end

@@ -19,16 +19,60 @@ class EntryCourier < ApplicationRecord
   has_many :statut_couriers, :through => :suivis, :source => :statut_courier
   has_many :trace_entrants
   rails_admin do
-
-=begin
-    configure :duration, :date do
-      date_format :default
-    end
-=end
+    label "courrier entrant"
     edit do
       exclude_fields :statut, :aasm_state, :heure,
                      :statut, :trace_entrants, :file_updated_at
+      field :project do
+        label "Projet"
+      end
+      field :user do
+        label "Utilisateur"
+      end
 
+      field :archive_entry_couriers do
+        label "Archive courrier entrant "
+      end
+
+      field :suivis do
+        label "Suivi"
+      end
+
+      field :statut_couriers do
+        label "Statut Courrier"
+      end
+    end
+    show do
+      field :reference do
+        label "Référence"
+      end
+      field :subject do
+        label "Objet"
+      end
+      field :sender do
+        label "Expéditeur"
+      end
+      field :receveir do
+        label "Recepteur"
+      end
+      field :duration do
+        label "Date de reception"
+      end
+      field :sentDate do
+        label "Date d'envoi"
+      end
+      field :orderNumber do
+        label "Numero d'ordre"
+      end
+      field :project do
+        label "Projet"
+      end
+      field :user do
+        label "utilisateur"
+      end
+      field :file do
+        label "Fichier"
+      end
     end
   end
   #has_many :release_couriers

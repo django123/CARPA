@@ -5,8 +5,16 @@ class ReleaseCourier < ApplicationRecord
   #belongs_to :entry_courier
   has_many :archive_release_couriers
   rails_admin do
+    label "Courrier Sortant"
     edit do
       exclude_fields :entry_id_id
+      field :user do
+        label "Utilisateur"
+      end
+
+      field :project do
+        label "Projet"
+      end
 
     end
   end

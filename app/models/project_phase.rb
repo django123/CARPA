@@ -5,9 +5,29 @@ class ProjectPhase < ApplicationRecord
   enumerize :phase, in:[:APMI,:AOR,:DPRE,:OF,:ADJ,:NTC,:SUIVI]
   belongs_to :project
    rails_admin do
+     label " Phase des projets"
      edit do
        exclude_fields :document_updated_at
-
+        field :phase do
+          label "Phase du projet"
+        end
+       field :project do
+         label " Projet"
+       end
+     end
+     show do
+       field :phase do
+         label "Phase du projet"
+       end
+       field :description do
+         label " Description"
+       end
+       field :project do
+         label "Projet"
+       end
+       field :document do
+         label "Fichier"
+       end
      end
    end
   
